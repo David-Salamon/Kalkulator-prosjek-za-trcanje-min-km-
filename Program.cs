@@ -9,8 +9,21 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            double minute=37, sekunde=49;
-            int distance = 10;
+            double sati, minute, sekunde;
+            int distance;
+
+            Console.Write("Upisite sate: ");
+            sati = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Upisite minute: ");
+            minute = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Upisite sekunde: ");
+            sekunde = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Upisite kilometre: ");
+            distance = Convert.ToInt32(Console.ReadLine());
+
 
             var time1 = TimeSpan.FromMinutes(minute);
             var time2 = TimeSpan.FromSeconds(sekunde);
